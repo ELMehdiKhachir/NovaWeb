@@ -37,7 +37,7 @@ export default function CGV() {
           </div>
           <div>
             <h2 className="text-xl font-semibold mb-2 text-white">Contact</h2>
-            <p>Pour toute question relative aux CGV, contactez-nous à <a href="mailto:contact@novaweb.fr" className="text-blue-400 underline">contact@novaweb.fr</a>.</p>
+            <p>Pour toute question relative aux CGV, contactez-nous à <a href="mailto:contact@novaweb-digital.fr" className="text-blue-400 underline">contact@novaweb-digital.fr</a>.</p>
           </div>
         </div>
       </section>

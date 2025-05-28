@@ -3,6 +3,7 @@ import './contact.css';
 import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
+import emailjs from 'emailjs-com';
 
 const sectionVariants = {
   hidden: { opacity: 0, y: 40 },
@@ -27,10 +28,19 @@ export default function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // Simulation d'envoi de formulaire
+    setFormStatus({ submitted: false, error: false, message: '' });
     try {
-      // Ici, vous pourrez ajouter la logique d'envoi réelle du formulaire
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      await emailjs.send(
+        'service_jo4epfl', // Service ID réel
+        'template_uyho1x4', // Template ID réel
+        {
+          name: formData.name,
+          email: formData.email,
+          title: formData.subject, // correspond à {{title}} dans le template
+          message: formData.message
+        },
+        'JUSMRGspL0-uBEGh9' // Public Key réel
+      );
       setFormStatus({
         submitted: true,
         error: false,
@@ -44,7 +54,7 @@ export default function Contact() {
       setFormStatus({
         submitted: true,
         error: true,
-        message: 'Une erreur est survenue. Veuillez réessayer.'
+        message: "Une erreur est survenue lors de l'envoi. Veuillez réessayer."
       });
     }
   };
@@ -176,7 +186,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold mb-1">Email</h3>
-                    <a href="mailto:contact@novaweb.fr" className="text-gray-300 hover:text-blue-400 transition">contact@novaweb.fr</a>
+                    <a href="mailto:contact@novaweb-digital.fr" className="text-gray-300 hover:text-blue-400 transition">contact@novaweb-digital.fr</a>
                   </div>
                 </div>
 

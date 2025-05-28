@@ -25,7 +25,7 @@ export default function PolitiqueConfidentialite() {
           </div>
           <div>
             <h2 className="text-xl font-semibold mb-2 text-white">Droits de l'utilisateur</h2>
-            <p>Conformément au RGPD, vous disposez d'un droit d'accès, de rectification et de suppression de vos données. Pour exercer ces droits, contactez-nous à <a href="mailto:contact@novaweb.fr" className="text-blue-400 underline">contact@novaweb.fr</a>.</p>
+            <p>Conformément au RGPD, vous disposez d'un droit d'accès, de rectification et de suppression de vos données. Pour exercer ces droits, contactez-nous à <a href="mailto:contact@novaweb-digital.fr" className="text-blue-400 underline">contact@novaweb-digital.fr</a>.</p>
           </div>
           <div>
             <h2 className="text-xl font-semibold mb-2 text-white">Contact</h2>
