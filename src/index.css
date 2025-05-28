@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-[#181B20] text-white;
+  transition: background 0.3s, color 0.3s;
+}
+
+.header-link {
+  transition: color 0.2s;
+}
+.header-link:hover {
+  color: #2563eb;
+}
+
+/* Sous-menu déroulant du header, version fiable */
+.group > ul {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  min-width: 220px;
+  box-shadow: 0 8px 32px 0 rgba(37,99,235,0.18), 0 1.5px 8px 0 rgba(0,0,0,0.10);
+  border-radius: 14px;
+  border: 1.5px solid #232B36;
+  background: #23262B;
+  z-index: 30;
+}
+.group:hover > ul,
+.group:focus-within > ul {
+  display: block;
+}
+.group > ul li:not(:last-child) {
+  border-bottom: 1px solid #232B36;
+}
+.group > ul li a.header-link {
+  display: block;
+  padding: 12px 24px;
+  color: #b0b8c1;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background 0.18s, color 0.18s;
+  border-radius: 0;
+}
+.group > ul li a.header-link:hover,
+.group > ul li a.header-link:focus {
+  background: #2563eb;
+  color: #fff;
+  border-radius: 8px;
+}

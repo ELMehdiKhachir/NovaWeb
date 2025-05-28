@@ -1,0 +1,304 @@
+/* --- Styles professionnels pour la page Services NovaWeb --- */
+
+body, main {
+    background: #181B20;
+    color: #fff;
+    font-family: 'sans-serif';
+  }
+  
+  .services-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px 40px 20px;
+    text-align: center;
+  }
+  
+  .services-title {
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .services-desc {
+    font-size: 20px;
+    color: #b0b8c1;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 32px;
+    margin-top: 40px;
+  }
+  
+  .service-card {
+    background: #23262B;
+    border-radius: 18px;
+    padding: 32px 24px 28px 24px;
+    min-height: 320px;
+    box-shadow: 0 2px 16px 0 rgba(0,0,0,0.10);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
+  }
+  
+  .service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(37,99,235,0.1), transparent);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: -1;
+  }
+  
+  .service-card:hover {
+    box-shadow: 0 12px 40px 0 rgba(37,99,235,0.15);
+    transform: translateY(-8px) scale(1.02);
+  }
+  
+  .service-card:hover::before {
+    opacity: 1;
+  }
+  
+  .service-illustration {
+    margin-bottom: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    transition: transform 0.4s ease;
+  }
+  
+  .service-card:hover .service-illustration {
+    transform: scale(1.1);
+  }
+  
+  .service-card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+  
+  .service-card p {
+    color: #b0b8c1;
+    margin-bottom: 14px;
+  }
+  
+  .service-card ul {
+    color: #7da2ff;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 260px;
+    padding-left: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .service-card ul li {
+    width: 100%;
+    margin-bottom: 6px;
+    transition: color 0.2s, transform 0.2s;
+    cursor: pointer;
+    text-align: left;
+  }
+  
+  .service-card ul li:hover {
+    color: #2563eb;
+    transform: translateX(6px);
+  }
+  
+  /* Amélioration des animations d'apparition */
+  .section-animate {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .section-animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .card-animate {
+    opacity: 0;
+    transform: translateY(24px) scale(0.98);
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .card-animate.visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  
+  .process-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .process-title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 32px;
+  }
+  
+  .process-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 32px;
+    margin-top: 20px;
+  }
+  
+  .process-card {
+    background: #23262B;
+    border-radius: 18px;
+    padding: 28px;
+    box-shadow: 0 2px 16px 0 rgba(0,0,0,0.10);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .process-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #2563eb, transparent);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+  }
+  
+  .process-card:hover {
+    box-shadow: 0 12px 40px 0 rgba(37,99,235,0.15);
+    transform: translateY(-8px) scale(1.02);
+  }
+  
+  .process-card:hover::after {
+    transform: scaleX(1);
+  }
+  
+  .process-step {
+    font-size: 32px;
+    font-weight: 700;
+    color: #2563eb;
+    margin-bottom: 12px;
+    transition: transform 0.4s ease;
+  }
+  
+  .process-card:hover .process-step {
+    transform: scale(1.1);
+  }
+  
+  .process-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  
+  .process-card p {
+    color: #b0b8c1;
+  }
+  
+  .cta-section {
+    max-width: 900px;
+    margin: 60px auto 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+    background: #23262B;
+    border-radius: 18px;
+    box-shadow: 0 2px 16px 0 rgba(0,0,0,0.10);
+  }
+  
+  .cta-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 18px;
+  }
+  
+  .cta-desc {
+    color: #b0b8c1;
+    font-size: 18px;
+    margin-bottom: 28px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .cta-btn {
+    display: inline-block;
+    background: #2563eb;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 14px 38px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 8px 0 rgba(37,99,235,0.10);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .cta-btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.6s ease, height 0.6s ease;
+  }
+  
+  .cta-btn:hover {
+    background: #174ea6;
+    transform: scale(1.04);
+    box-shadow: 0 4px 20px 0 rgba(37,99,235,0.2);
+  }
+  
+  .cta-btn:hover::before {
+    width: 300px;
+    height: 300px;
+  }
+  
+  footer {
+    border-top: 1.5px solid #23262B;
+    padding: 32px;
+    color: #888;
+    font-size: 14px;
+    margin-top: 40px;
+  }
+  
+  @media (max-width: 900px) {
+    .services-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+    .process-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media (max-width: 600px) {
+    .services-grid, .process-grid {
+      grid-template-columns: 1fr;
+    }
+    .cta-section {
+      margin: 32px 8px 0 8px;
+      padding: 24px 8px;
+    }
+  }
