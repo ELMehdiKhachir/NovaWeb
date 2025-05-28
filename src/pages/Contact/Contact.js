@@ -31,15 +31,15 @@ export default function Contact() {
     setFormStatus({ submitted: false, error: false, message: '' });
     try {
       await emailjs.send(
-        'service_jo4epfl', // Service ID réel
-        'template_uyho1x4', // Template ID réel
+        'service_jo4epfl',
+        'template_09s0v6h',
         {
           name: formData.name,
           email: formData.email,
-          title: formData.subject, // correspond à {{title}} dans le template
+          title: formData.subject,
           message: formData.message
         },
-        'JUSMRGspL0-uBEGh9' // Public Key réel
+        'JUSMRGspL0-uBEGh9'
       );
       setFormStatus({
         submitted: true,
@@ -56,6 +56,7 @@ export default function Contact() {
         error: true,
         message: "Une erreur est survenue lors de l'envoi. Veuillez réessayer."
       });
+      console.error('Erreur EmailJS:', error);
     }
   };
 

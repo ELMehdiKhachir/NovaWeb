@@ -15,6 +15,7 @@ import SiteEcommerce from './pages/Services/SiteEcommerce';
 import Maintenance from './pages/Services/Maintenance';
 import Refonte from './pages/Services/Refonte';
 import ApplicationMobile from './pages/Services/ApplicationMobile';
+import Merci from './pages/Merci';
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -41,18 +42,6 @@ function App() {
         <Footer />
       </div>
     </div>
-  );
-}
-
-function Merci() {
-  return (
-    <main className="bg-[#181B20] min-h-screen text-white font-sans flex items-center justify-center">
-      <div className="max-w-xl mx-auto text-center py-24 px-6">
-        <h1 className="text-4xl font-bold mb-6 text-blue-500">Merci pour votre message !</h1>
-        <p className="text-lg text-gray-300 mb-8">Nous avons bien reçu votre demande et vous répondrons dans les plus brefs délais.</p>
-        <a href="/" className="text-blue-400 underline hover:text-blue-300">Retour à l'accueil</a>
-      </div>
-    </main>
   );
 }
 
