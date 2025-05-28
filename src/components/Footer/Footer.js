@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="footer-grid">
           {/* Colonne 1 - À propos */}
           <div className="footer-column">
-            <h3 className="footer-title">NovaWeb</h3>
+            <h3 className="footer-title">NovaWeb Digital</h3>
             <p className="footer-description">
               Créateur d'expériences web modernes et performantes. Nous transformons vos idées en réalité digitale.
             </p>
@@ -64,7 +64,7 @@ export default function Footer() {
                 <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                 </svg>
-                <a href="mailto:contact@novaweb.fr" className="footer-link">contact@novaweb.fr</a>
+                <a href="mailto:contact@novaweb-digital.fr" className="footer-link">contact@novaweb-digital.fr</a>
               </li>
               <li>
                 <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -86,7 +86,7 @@ export default function Footer() {
         {/* Footer bottom */}
         <div className="footer-bottom">
           <div className="footer-legal">
-            <span>© 2024 NovaWeb. Tous droits réservés.</span>
+            <span>© 2024 NovaWeb Digital. Tous droits réservés.</span>
             <div className="footer-legal-links">
               <Link to="/mentions-legales" className="footer-link">Mentions légales</Link>
               <Link to="/politique-confidentialite" className="footer-link">Politique de confidentialité</Link>

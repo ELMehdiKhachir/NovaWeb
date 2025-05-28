@@ -13,19 +13,19 @@ export default function Home() {
   return (
     <main className="bg-[#181B20] min-h-screen text-white font-sans">
       <Helmet>
-        <title>NovaWeb - Agence Web Moderne</title>
-        <meta name="description" content="NovaWeb conçoit des sites web modernes, performants et optimisés pour le référencement." />
+        <title>NovaWeb Digital - Agence Web Moderne</title>
+        <meta name="description" content="NovaWeb Digital conçoit des sites web modernes, performants et optimisés pour le référencement." />
         <meta name="keywords" content="agence web, création site internet, Nantes, site vitrine, site e-commerce, application mobile, refonte, maintenance, SEO" />
         {/* Open Graph */}
-        <meta property="og:title" content="NovaWeb - Agence Web Moderne" />
-        <meta property="og:description" content="NovaWeb conçoit des sites web modernes, performants et optimisés pour le référencement." />
+        <meta property="og:title" content="NovaWeb Digital - Agence Web Moderne" />
+        <meta property="og:description" content="NovaWeb Digital conçoit des sites web modernes, performants et optimisés pour le référencement." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://novaweb.fr/" />
         <meta property="og:image" content="/logo-pack/novaweb-logo-original.png" />
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="NovaWeb - Agence Web Moderne" />
-        <meta name="twitter:description" content="NovaWeb conçoit des sites web modernes, performants et optimisés pour le référencement." />
+        <meta name="twitter:title" content="NovaWeb Digital - Agence Web Moderne" />
+        <meta name="twitter:description" content="NovaWeb Digital conçoit des sites web modernes, performants et optimisés pour le référencement." />
         <meta name="twitter:image" content="/logo-pack/novaweb-logo-original.png" />
       </Helmet>
       {/* Hero Section */}
@@ -38,7 +38,7 @@ export default function Home() {
         variants={sectionVariants}
       >
         <div className="flex-1">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center leading-tight">Bienvenue chez <br />NovaWeb</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center leading-tight">Bienvenue chez <br />NovaWeb Digital</h1>
           <p className="text-lg text-gray-300 mb-8 max-w-md text-center">Nous concevons des sites web modernes, performants et optimisés pour le référencement.</p>
           <div className="flex justify-center mt-8">
             <Link to="/services" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-7 py-3 rounded-lg shadow transition cta-main">Nos services</Link>
@@ -63,7 +63,7 @@ export default function Home() {
               <rect x="170" y="150" width="60" height="8" rx="4" fill="#2d3a4e"/>
               {/* Texte NovaWeb encore plus bas */}
               <text x="200" y="195" textAnchor="middle" fill="#2563eb" fontSize="18" fontWeight="bold" opacity="0.5">
-                NovaWeb
+                NovaWeb Digital
               </text>
             </g>
             {/* Icônes flottantes */}
@@ -244,7 +244,7 @@ export default function Home() {
       >
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6 text-center">À propos</h2>
-          <p className="text-lg text-gray-300">NovaWeb est une agence digitale passionnée par l'innovation. Notre équipe met à profit son expertise pour concevoir des sites web uniques, performants et adaptés à vos besoins. Nous croyons en la créativité, la rigueur et l'accompagnement sur-mesure.</p>
+          <p className="text-lg text-gray-300">NovaWeb Digital est une agence digitale passionnée par l'innovation. Notre équipe met à profit son expertise pour concevoir des sites web uniques, performants et adaptés à vos besoins. Nous croyons en la créativité, la rigueur et l'accompagnement sur-mesure.</p>
         </div>
       </motion.section>
 

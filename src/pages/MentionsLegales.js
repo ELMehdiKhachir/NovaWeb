@@ -5,15 +5,15 @@ export default function MentionsLegales() {
   return (
     <main className="bg-[#181B20] min-h-screen text-white font-sans">
       <Helmet>
-        <title>Mentions légales - NovaWeb</title>
-        <meta name="description" content="Mentions légales du site NovaWeb." />
+        <title>Mentions légales - NovaWeb Digital</title>
+        <meta name="description" content="Mentions légales du site NovaWeb Digital." />
       </Helmet>
       <section className="max-w-3xl mx-auto py-16 px-6">
         <h1 className="text-3xl font-bold mb-8 text-center">Mentions légales</h1>
         <div className="space-y-8 text-gray-300">
           <div>
             <h2 className="text-xl font-semibold mb-2 text-white">Éditeur du site</h2>
-            <p>NovaWeb<br />
+            <p>NovaWeb Digital<br />
             contact@novaweb-digital.fr<br />
             Nantes, France</p>
           </div>
@@ -25,11 +25,11 @@ export default function MentionsLegales() {
           </div>
           <div>
             <h2 className="text-xl font-semibold mb-2 text-white">Responsable de la publication</h2>
-            <p>Le responsable de la publication est le représentant légal de NovaWeb.</p>
+            <p>Le responsable de la publication est le représentant légal de NovaWeb Digital.</p>
           </div>
           <div>
             <h2 className="text-xl font-semibold mb-2 text-white">Propriété intellectuelle</h2>
-            <p>Tous les contenus présents sur ce site (textes, images, graphismes, logo, icônes, etc.) sont la propriété exclusive de NovaWeb, sauf mention contraire. Toute reproduction, distribution, modification, adaptation, retransmission ou publication, même partielle, de ces différents éléments est strictement interdite sans l'accord écrit de NovaWeb.</p>
+            <p>Tous les contenus présents sur ce site (textes, images, graphismes, logo, icônes, etc.) sont la propriété exclusive de NovaWeb Digital, sauf mention contraire. Toute reproduction, distribution, modification, adaptation, retransmission ou publication, même partielle, de ces différents éléments est strictement interdite sans l'accord écrit de NovaWeb Digital.</p>
           </div>
           <div>
             <h2 className="text-xl font-semibold mb-2 text-white">Contact</h2>

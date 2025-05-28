@@ -7,11 +7,14 @@ export default function Header() {
 
   return (
     <header className="flex justify-between items-center px-8 py-6 max-w-6xl mx-auto w-full">
-      <div className="flex items-center gap-3">
+      <div className="flex flex-row items-center gap-3 mr-6">
         <span className="w-12 h-12 flex items-center justify-center">
-          <img src="/logo-pack/novaweb-logo-original.png" alt="Logo NovaWeb" className="w-12 h-12 object-contain" />
+          <img src="/logo-pack/novaweb-logo-original.png" alt="Logo NovaWeb Digital" className="w-12 h-12 object-contain" />
         </span>
-        <span className="text-3xl font-bold tracking-tight font-sans">NovaWeb</span>
+        <div className="flex flex-col items-start">
+          <span className="text-3xl font-bold tracking-tight font-sans leading-none">NovaWeb</span>
+          <span className="text-lg font-semibold tracking-wide text-blue-500 -mt-1">Digital</span>
+        </div>
       </div>
       {/* Desktop menu */}
       <nav aria-label="Menu principal" className="hidden md:block">
