@@ -5,8 +5,9 @@ export default function CGV() {
   return (
     <main className="bg-[#181B20] min-h-screen text-white font-sans">
       <Helmet>
-        <title>Conditions Générales de Vente - NovaWeb</title>
-        <meta name="description" content="Conditions Générales de Vente du site NovaWeb." />
+        <title>Conditions Générales de Vente - NovaWeb Digital | Agence web à Nantes</title>
+        <meta name="description" content="Conditions Générales de Vente de NovaWeb Digital, agence web à Nantes, spécialisée en création de sites internet pour PME et entreprises en Loire-Atlantique." />
+        <meta name="keywords" content="CGV, agence web Nantes, NovaWeb Digital, création site internet Loire-Atlantique, PME, entreprise" />
       </Helmet>
       <section className="max-w-3xl mx-auto py-16 px-6">
         <h1 className="text-3xl font-bold mb-8 text-center">Conditions Générales de Vente</h1>

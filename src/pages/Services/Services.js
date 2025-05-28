@@ -10,6 +10,7 @@ import SiteEcommerce from './SiteEcommerce';
 import Maintenance from './Maintenance';
 import Refonte from './Refonte';
 import ApplicationMobile from './ApplicationMobile';
+import { motion } from 'framer-motion';
 
 // Hook utilitaire pour détecter si un élément est dans le viewport
 function useInView(options = {}) {
@@ -48,28 +49,40 @@ export default function Services() {
   const [pr4, pv4] = useInView({ threshold: 0.2 });
 
   return (
-    <main className="bg-[#181B20] min-h-screen text-white font-sans">
+    <main role="main" className="bg-[#181B20] min-h-screen text-white font-sans">
       <Helmet>
-        <title>Services - NovaWeb | Solutions Web Professionnelles</title>
-        <meta name="description" content="Découvrez nos services de développement web : sites vitrines, e-commerce, applications web sur mesure, applications mobiles. Des solutions adaptées à vos besoins." />
-        <meta name="keywords" content="services web, développement web, sites vitrines, e-commerce, applications web, applications mobiles, maintenance, refonte, Nantes" />
+        <title>Services - NovaWeb Digital | Agence web à Nantes</title>
+        <meta name="description" content="Découvrez les services de NovaWeb Digital, agence web à Nantes : création de site vitrine, e-commerce, application mobile, maintenance, refonte pour PME et entreprises en Loire-Atlantique." />
+        <meta name="keywords" content="services web Nantes, création site internet Loire-Atlantique, site vitrine PME, site e-commerce, application mobile, maintenance, refonte, agence digitale Nantes" />
         {/* Open Graph */}
-        <meta property="og:title" content="Services - NovaWeb | Solutions Web Professionnelles" />
-        <meta property="og:description" content="Découvrez nos services de développement web : sites vitrines, e-commerce, applications web sur mesure, applications mobiles. Des solutions adaptées à vos besoins." />
+        <meta property="og:title" content="Services - NovaWeb Digital | Agence web à Nantes" />
+        <meta property="og:description" content="Services web à Nantes : site vitrine, e-commerce, application mobile, maintenance, refonte pour PME et entreprises en Loire-Atlantique." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://novaweb.fr/services" />
         <meta property="og:image" content="/logo-pack/novaweb-logo-original.png" />
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Services - NovaWeb | Solutions Web Professionnelles" />
-        <meta name="twitter:description" content="Découvrez nos services de développement web : sites vitrines, e-commerce, applications web sur mesure, applications mobiles. Des solutions adaptées à vos besoins." />
+        <meta name="twitter:title" content="Services - NovaWeb Digital | Agence web à Nantes" />
+        <meta name="twitter:description" content="Agence web à Nantes spécialisée en création de site internet, e-commerce, application mobile, maintenance, refonte pour PME et entreprises en Loire-Atlantique." />
         <meta name="twitter:image" content="/logo-pack/novaweb-logo-original.png" />
       </Helmet>
-      <section className="services-section section-animate">
+      <motion.section
+        id="hero"
+        role="region"
+        aria-label="Hero"
+        className="max-w-6xl mx-auto py-20 px-8"
+      >
         <h1 className="services-title">Nos Services</h1>
         <p className="services-desc">
-          Des solutions web et mobiles sur mesure pour concrétiser vos ambitions digitales.
+          Des solutions web et mobiles sur mesure à Nantes et Loire-Atlantique pour concrétiser vos ambitions digitales. Idéal pour PME, entreprises et indépendants souhaitant booster leur visibilité locale.
         </p>
+      </motion.section>
+      <motion.section
+        id="services"
+        role="region"
+        aria-label="Nos Services"
+        className="bg-[#1C1F24] py-16 px-8"
+      >
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 justify-items-center">
           {/* Site Vitrine */}
           <Link to="/services/site-vitrine" className="no-underline">
@@ -156,8 +169,13 @@ export default function Services() {
             </div>
           </Link>
         </div>
-      </section>
-      <section className="process-section section-animate">
+      </motion.section>
+      <motion.section
+        id="process"
+        role="region"
+        aria-label="Notre Processus"
+        className="py-16 px-8"
+      >
         <h2 className="process-title">Notre Processus</h2>
         <div className="process-grid">
           <div ref={pr1} className={`process-card card-animate${pv1 ? ' visible' : ''}`}>
@@ -181,8 +199,13 @@ export default function Services() {
             <p>Mise en ligne et suivi post-lancement</p>
           </div>
         </div>
-      </section>
-      <section className="cta-section section-animate">
+      </motion.section>
+      <motion.section
+        id="cta"
+        role="region"
+        aria-label="Appel à l'action"
+        className="bg-[#1C1F24] py-16 px-8"
+      >
         <h2 className="cta-title">Prêt à démarrer votre projet&nbsp;?</h2>
         <p className="cta-desc">
           Contactez-moi dès maintenant pour discuter de votre projet et obtenir un devis personnalisé.
@@ -190,7 +213,7 @@ export default function Services() {
         <a href="/contact" className="cta-btn">
           Discutons de votre projet
         </a>
-      </section>
+      </motion.section>
     </main>
   );
 }

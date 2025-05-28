@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import { motion } from 'framer-motion';
 
 const IconShop = () => (
   <svg width="36" height="36" fill="none" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="10" rx="3" fill="#2563eb"/><rect x="6" y="10" width="12" height="2" rx="1" fill="#fff"/><rect x="8" y="14" width="8" height="2" rx="1" fill="#fff"/></svg>
@@ -16,25 +17,30 @@ const IconSEO = () => (
 
 export default function SiteEcommerce() {
   return (
-    <main className="bg-[#181B20] min-h-screen text-white font-sans">
+    <main role="main" className="bg-[#181B20] min-h-screen text-white font-sans">
       <Helmet>
-        <title>Création de site e-commerce à Nantes | NovaWeb</title>
-        <meta name="description" content="Développement de site e-commerce performant à Nantes et Pays de la Loire. Boutique en ligne, paiement sécurisé, SEO, accompagnement sur-mesure." />
-        <meta name="keywords" content="site e-commerce, création boutique en ligne, Nantes, paiement sécurisé, SEO, NovaWeb, vente en ligne" />
+        <title>Création de site e-commerce à Nantes | NovaWeb Digital</title>
+        <meta name="description" content="Développement de site e-commerce performant à Nantes et Loire-Atlantique. Boutique en ligne, paiement sécurisé, SEO, accompagnement sur-mesure pour PME et entreprises locales." />
+        <meta name="keywords" content="site e-commerce Nantes, création boutique en ligne Loire-Atlantique, e-commerce PME, agence web Nantes, vente en ligne, SEO, entreprise" />
         {/* Open Graph */}
-        <meta property="og:title" content="Création de site e-commerce à Nantes | NovaWeb" />
-        <meta property="og:description" content="Développement de site e-commerce performant à Nantes et Pays de la Loire. Boutique en ligne, paiement sécurisé, SEO, accompagnement sur-mesure." />
+        <meta property="og:title" content="Création de site e-commerce à Nantes | NovaWeb Digital" />
+        <meta property="og:description" content="Création de site e-commerce à Nantes et Loire-Atlantique pour PME et entreprises. Boutique en ligne, paiement sécurisé, SEO, accompagnement local." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://novaweb.fr/services/site-ecommerce" />
         <meta property="og:image" content="/logo-pack/novaweb-logo-original.png" />
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Création de site e-commerce à Nantes | NovaWeb" />
-        <meta name="twitter:description" content="Développement de site e-commerce performant à Nantes et Pays de la Loire. Boutique en ligne, paiement sécurisé, SEO, accompagnement sur-mesure." />
+        <meta name="twitter:title" content="Création de site e-commerce à Nantes | NovaWeb Digital" />
+        <meta name="twitter:description" content="Agence web à Nantes spécialisée en e-commerce sur mesure pour PME et entreprises en Loire-Atlantique." />
         <meta name="twitter:image" content="/logo-pack/novaweb-logo-original.png" />
       </Helmet>
       {/* Héros visuel */}
-      <section className="max-w-4xl mx-auto py-16 px-6 flex flex-col md:flex-row items-center gap-10">
+      <motion.section
+        id="hero"
+        role="region"
+        aria-label="Hero"
+        className="max-w-4xl mx-auto py-16 px-6 flex flex-col md:flex-row items-center gap-10"
+      >
         <div className="flex-1 flex justify-center">
           <svg width="220" height="180" viewBox="0 0 220 180" fill="none" xmlns="http://www.w3.org/2000/svg" className="drop-shadow-xl">
             <ellipse cx="110" cy="160" rx="90" ry="18" fill="#232B36"/>
@@ -47,12 +53,17 @@ export default function SiteEcommerce() {
         </div>
         <div className="flex-1">
           <h1 className="text-4xl font-bold mb-4 text-center md:text-left">Création de site e-commerce à Nantes</h1>
-          <p className="text-lg text-gray-300 mb-6 text-center md:text-left">Développez votre activité en ligne avec une boutique e-commerce moderne, sécurisée et optimisée pour la conversion. Idéal pour commerçants, PME et start-up.</p>
+          <p className="text-lg text-gray-300 mb-6 text-center md:text-left">Développez votre activité en ligne à Nantes et Loire-Atlantique avec une boutique e-commerce moderne, sécurisée et optimisée pour la conversion. Idéal pour commerçants, PME et entreprises locales.</p>
           <a href="/contact" className="cta-btn inline-block">Demander un devis</a>
         </div>
-      </section>
+      </motion.section>
       {/* Avantages */}
-      <section className="max-w-4xl mx-auto py-10 px-6 grid grid-cols-1 md:grid-cols-2 gap-8">
+      <motion.section
+        id="advantages"
+        role="region"
+        aria-label="Avantages"
+        className="max-w-4xl mx-auto py-10 px-6 grid grid-cols-1 md:grid-cols-2 gap-8"
+      >
         <div className="flex items-center gap-4 bg-[#23262B] rounded-xl p-6 shadow">
           <IconShop />
           <div>
@@ -81,9 +92,13 @@ export default function SiteEcommerce() {
             <p className="text-gray-300">Notre équipe vous accompagne avant, pendant et après la mise en ligne.</p>
           </div>
         </div>
-      </section>
+      </motion.section>
       {/* Processus */}
-      <section className="max-w-4xl mx-auto py-10 px-6">
+      <section
+        role="region"
+        aria-label="Processus"
+        className="max-w-4xl mx-auto py-10 px-6"
+      >
         <h2 className="text-2xl font-bold mb-8 text-center">Notre méthode</h2>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
           <div className="bg-[#23262B] rounded-xl p-6 flex flex-col items-center shadow">
@@ -109,7 +124,11 @@ export default function SiteEcommerce() {
         </div>
       </section>
       {/* Pourquoi choisir NovaWeb */}
-      <section className="max-w-3xl mx-auto py-10 px-6 text-center">
+      <section
+        role="region"
+        aria-label="Pourquoi nous choisir"
+        className="max-w-3xl mx-auto py-10 px-6 text-center"
+      >
         <h2 className="text-2xl font-bold mb-4">Pourquoi choisir NovaWeb ?</h2>
         <p className="text-lg text-gray-300 mb-4">Expertise e-commerce, accompagnement humain, sécurité, performance et référencement : tout est pensé pour la réussite de vos ventes en ligne.</p>
         <ul className="flex flex-wrap justify-center gap-4 text-gray-400 text-sm">
@@ -120,7 +139,11 @@ export default function SiteEcommerce() {
         </ul>
       </section>
       {/* FAQ */}
-      <section className="max-w-3xl mx-auto py-10 px-6">
+      <section
+        role="region"
+        aria-label="FAQ"
+        className="max-w-3xl mx-auto py-10 px-6"
+      >
         <h2 className="text-2xl font-bold mb-6 text-center">FAQ - Site e-commerce</h2>
         <div className="space-y-6">
           <div className="bg-[#23262B] rounded-xl p-5">
@@ -138,7 +161,11 @@ export default function SiteEcommerce() {
         </div>
       </section>
       {/* Appel à l'action final */}
-      <section className="max-w-2xl mx-auto py-10 px-6 text-center">
+      <section
+        role="region"
+        aria-label="Appel à l'action"
+        className="max-w-2xl mx-auto py-10 px-6 text-center"
+      >
         <h2 className="text-2xl font-bold mb-4">Prêt à vendre en ligne ?</h2>
         <p className="text-lg text-gray-300 mb-6">Contactez-nous pour discuter de votre projet et obtenir un devis gratuit, sans engagement.</p>
         <a href="/contact" className="cta-btn inline-block">Discutons de votre projet</a>

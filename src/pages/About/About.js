@@ -11,15 +11,18 @@ const sectionVariants = {
 
 export default function About() {
   return (
-    <main className="bg-[#181B20] min-h-screen text-white font-sans">
+    <main role="main" className="bg-[#181B20] min-h-screen text-white font-sans">
       <Helmet>
-        <title>À propos - NovaWeb | Notre Histoire et Notre Mission</title>
-        <meta name="description" content="Découvrez l'histoire de NovaWeb, notre mission et nos valeurs. Une agence web passionnée par l'innovation et l'excellence digitale." />
-        <meta name="keywords" content="NovaWeb, agence web, histoire, mission, valeurs, innovation digitale" />
+        <title>À propos - NovaWeb Digital | Agence web à Nantes</title>
+        <meta name="description" content="Découvrez l'histoire de NovaWeb Digital, agence web à Nantes, notre mission et nos valeurs. Spécialistes de la création de sites internet pour PME et entreprises en Loire-Atlantique." />
+        <meta name="keywords" content="agence web Nantes, histoire NovaWeb Digital, mission, valeurs, innovation digitale, création site internet Loire-Atlantique, PME, entreprise" />
       </Helmet>
 
       {/* Hero Section */}
       <motion.section
+        id="hero"
+        role="region"
+        aria-label="Hero"
         className="max-w-6xl mx-auto py-20 px-8"
         initial="hidden"
         whileInView="visible"
@@ -29,7 +32,7 @@ export default function About() {
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center">Notre Histoire</h1>
           <p className="text-lg text-gray-300 max-w-3xl mx-auto text-center">
-            De passionné du web à créateur d'expériences digitales exceptionnelles
+            NovaWeb Digital est une agence web basée à Nantes, spécialisée dans la création de sites internet performants pour PME et entreprises en Loire-Atlantique. Notre équipe met à profit son expertise pour concevoir des solutions digitales uniques, adaptées à vos besoins et à votre marché local.
           </p>
         </div>
 
@@ -113,6 +116,9 @@ export default function About() {
 
       {/* Notre Mission */}
       <motion.section
+        id="values"
+        role="region"
+        aria-label="Nos Valeurs"
         className="bg-[#1C1F24] py-20 px-8"
         initial="hidden"
         whileInView="visible"

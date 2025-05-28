@@ -11,21 +11,21 @@ const sectionVariants = {
 
 export default function Home() {
   return (
-    <main className="bg-[#181B20] min-h-screen text-white font-sans">
+    <main role="main" className="bg-[#181B20] min-h-screen text-white font-sans">
       <Helmet>
-        <title>NovaWeb Digital - Agence Web Moderne</title>
-        <meta name="description" content="NovaWeb Digital conçoit des sites web modernes, performants et optimisés pour le référencement." />
-        <meta name="keywords" content="agence web, création site internet, Nantes, site vitrine, site e-commerce, application mobile, refonte, maintenance, SEO" />
+        <title>NovaWeb Digital - Agence web à Nantes, Loire-Atlantique</title>
+        <meta name="description" content="NovaWeb Digital, agence web à Nantes, conçoit des sites internet modernes, performants et optimisés pour le référencement local en Loire-Atlantique : site vitrine, e-commerce, application mobile, maintenance, refonte pour PME et entreprises." />
+        <meta name="keywords" content="agence web Nantes, création site internet Loire-Atlantique, site vitrine sur mesure, site e-commerce, application mobile, référencement, maintenance, refonte, PME, entreprises, solutions digitales Nantes" />
         {/* Open Graph */}
-        <meta property="og:title" content="NovaWeb Digital - Agence Web Moderne" />
-        <meta property="og:description" content="NovaWeb Digital conçoit des sites web modernes, performants et optimisés pour le référencement." />
+        <meta property="og:title" content="NovaWeb Digital - Agence web à Nantes, Loire-Atlantique" />
+        <meta property="og:description" content="Création de site internet à Nantes et Loire-Atlantique : site vitrine, e-commerce, application mobile, maintenance, refonte, SEO pour PME et entreprises." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://novaweb.fr/" />
         <meta property="og:image" content="/logo-pack/novaweb-logo-original.png" />
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="NovaWeb Digital - Agence Web Moderne" />
-        <meta name="twitter:description" content="NovaWeb Digital conçoit des sites web modernes, performants et optimisés pour le référencement." />
+        <meta name="twitter:title" content="NovaWeb Digital - Agence web à Nantes, Loire-Atlantique" />
+        <meta name="twitter:description" content="Agence web à Nantes spécialisée en création de site internet, e-commerce, application mobile, maintenance, refonte et SEO pour PME et entreprises en Loire-Atlantique." />
         <meta name="twitter:image" content="/logo-pack/novaweb-logo-original.png" />
       </Helmet>
       {/* Hero Section */}
@@ -38,8 +38,8 @@ export default function Home() {
         variants={sectionVariants}
       >
         <div className="flex-1">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center leading-tight">Bienvenue chez <br />NovaWeb Digital</h1>
-          <p className="text-lg text-gray-300 mb-8 max-w-md text-center">Nous concevons des sites web modernes, performants et optimisés pour le référencement.</p>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center leading-tight">Agence web à Nantes<br />NovaWeb Digital</h1>
+          <p className="text-lg text-gray-300 mb-8 max-w-md text-center">Création de site internet sur mesure en Loire-Atlantique : site vitrine, e-commerce, application mobile, maintenance et refonte pour PME et entreprises. Boostez votre visibilité locale avec une agence digitale experte à Nantes.</p>
           <div className="flex justify-center mt-8">
             <Link to="/services" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-7 py-3 rounded-lg shadow transition cta-main">Nos services</Link>
           </div>
@@ -96,6 +96,8 @@ export default function Home() {
       {/* Services Section */}
       <motion.section
         id="services"
+        role="region"
+        aria-label="Nos Services"
         className="bg-[#1C1F24] py-16 px-8"
         initial="hidden"
         whileInView="visible"
@@ -235,8 +237,10 @@ export default function Home() {
 
       {/* À propos */}
       <motion.section
-        id="apropos"
-        className="bg-[#1C1F24] py-16 px-8"
+        id="about"
+        role="region"
+        aria-label="À propos"
+        className="bg-[#181B20] py-16 px-8"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}

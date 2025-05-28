@@ -69,25 +69,28 @@ export default function Contact() {
   };
 
   return (
-    <main className="bg-[#181B20] min-h-screen text-white font-sans">
+    <main role="main" className="bg-[#181B20] min-h-screen text-white font-sans">
       <Helmet>
-        <title>Contact - NovaWeb | Parlons de votre projet</title>
-        <meta name="description" content="Contactez NovaWeb pour discuter de votre projet web. Nous sommes là pour vous accompagner dans la réalisation de vos ambitions digitales." />
-        <meta name="keywords" content="contact, NovaWeb, projet web, développement web, consultation" />
+        <title>Contact - NovaWeb Digital | Agence web à Nantes</title>
+        <meta name="description" content="Contactez NovaWeb Digital, agence web à Nantes, pour discuter de votre projet de site internet, e-commerce, application mobile, maintenance ou refonte en Loire-Atlantique. Solutions sur mesure pour PME et entreprises." />
+        <meta name="keywords" content="contact agence web Nantes, devis site internet Loire-Atlantique, création site vitrine PME, e-commerce, application mobile, maintenance, refonte, entreprise Nantes" />
       </Helmet>
 
       {/* Hero Section */}
       <motion.section
-        className="max-w-6xl mx-auto py-20 px-8"
+        id="contact"
+        role="region"
+        aria-label="Contact"
+        className="bg-[#1C1F24] py-16 px-8"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.3 }}
         variants={sectionVariants}
       >
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center">Parlons de votre projet</h1>
           <p className="text-lg text-gray-300 max-w-3xl mx-auto text-center">
-            Transformez vos idées en réalité digitale. Je suis là pour vous accompagner.
+            Transformez vos idées en réalité digitale à Nantes et Loire-Atlantique. NovaWeb Digital accompagne PME et entreprises dans la création de sites internet, e-commerce, applications mobiles, maintenance et refonte.
           </p>
         </div>
 

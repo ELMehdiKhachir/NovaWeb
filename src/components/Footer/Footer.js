@@ -4,7 +4,7 @@ import './footer.css';
 
 export default function Footer() {
   return (
-    <footer className="footer">
+    <footer role="contentinfo" className="footer">
       <div className="footer-content">
         <div className="footer-grid">
           {/* Colonne 1 - À propos */}
@@ -35,13 +35,15 @@ export default function Footer() {
           {/* Colonne 2 - Navigation */}
           <div className="footer-column">
             <h3 className="footer-title">Navigation</h3>
-            <ul className="footer-links">
-              <li><Link to="/" className="footer-link">Accueil</Link></li>
-              <li><Link to="/services" className="footer-link">Services</Link></li>
-              <li><Link to="/about" className="footer-link">À propos</Link></li>
-              <li><Link to="/contact" className="footer-link">Contact</Link></li>
-              <li><Link to="/nova-methode" className="footer-link">NovaMéthode</Link></li>
-            </ul>
+            <nav role="navigation" aria-label="Navigation du pied de page">
+              <ul className="footer-links">
+                <li><Link to="/" className="footer-link">Accueil</Link></li>
+                <li><Link to="/services" className="footer-link">Services</Link></li>
+                <li><Link to="/novaMethode" className="footer-link">NovaMéthode</Link></li>
+                <li><Link to="/about" className="footer-link">À propos</Link></li>
+                <li><Link to="/contact" className="footer-link">Contact</Link></li>
+              </ul>
+            </nav>
           </div>
 
           {/* Colonne 3 - Services */}

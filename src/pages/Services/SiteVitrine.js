@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import { motion } from 'framer-motion';
 
 // Icônes SVG inline pour l'exemple
 const IconDesign = () => (
@@ -17,25 +18,33 @@ const IconMobile = () => (
 
 export default function SiteVitrine() {
   return (
-    <main className="bg-[#181B20] min-h-screen text-white font-sans">
+    <main role="main" className="bg-[#181B20] min-h-screen text-white font-sans">
       <Helmet>
-        <title>Création de site vitrine à Nantes | NovaWeb</title>
-        <meta name="description" content="Création de site vitrine professionnel à Nantes et Pays de la Loire. Présence en ligne, design moderne, SEO, accompagnement sur-mesure." />
-        <meta name="keywords" content="site vitrine, création site vitrine, Nantes, design web, SEO, NovaWeb, site professionnel" />
+        <title>Création de site vitrine à Nantes | NovaWeb Digital</title>
+        <meta name="description" content="Création de site vitrine professionnel à Nantes et Loire-Atlantique. Présence en ligne, design moderne, SEO, accompagnement sur-mesure pour PME et entreprises locales." />
+        <meta name="keywords" content="site vitrine Nantes, création site internet Loire-Atlantique, site vitrine sur mesure PME, agence web Nantes, visibilité locale, SEO, entreprise" />
         {/* Open Graph */}
-        <meta property="og:title" content="Création de site vitrine à Nantes | NovaWeb" />
-        <meta property="og:description" content="Création de site vitrine professionnel à Nantes et Pays de la Loire. Présence en ligne, design moderne, SEO, accompagnement sur-mesure." />
+        <meta property="og:title" content="Création de site vitrine à Nantes | NovaWeb Digital" />
+        <meta property="og:description" content="Création de site vitrine à Nantes et Loire-Atlantique pour PME et entreprises. Design moderne, SEO, accompagnement local." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://novaweb.fr/services/site-vitrine" />
         <meta property="og:image" content="/logo-pack/novaweb-logo-original.png" />
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Création de site vitrine à Nantes | NovaWeb" />
-        <meta name="twitter:description" content="Création de site vitrine professionnel à Nantes et Pays de la Loire. Présence en ligne, design moderne, SEO, accompagnement sur-mesure." />
+        <meta name="twitter:title" content="Création de site vitrine à Nantes | NovaWeb Digital" />
+        <meta name="twitter:description" content="Agence web à Nantes spécialisée en site vitrine sur mesure pour PME et entreprises en Loire-Atlantique." />
         <meta name="twitter:image" content="/logo-pack/novaweb-logo-original.png" />
       </Helmet>
       {/* Héros visuel */}
-      <section className="max-w-4xl mx-auto py-16 px-6 flex flex-col md:flex-row items-center gap-10">
+      <motion.section
+        id="hero"
+        role="region"
+        aria-label="Hero"
+        className="max-w-4xl mx-auto py-16 px-6 flex flex-col md:flex-row items-center gap-10"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
+      >
         <div className="flex-1 flex justify-center">
           {/* Illustration SVG moderne */}
           <svg width="220" height="180" viewBox="0 0 220 180" fill="none" xmlns="http://www.w3.org/2000/svg" className="drop-shadow-xl">
@@ -49,12 +58,20 @@ export default function SiteVitrine() {
         </div>
         <div className="flex-1">
           <h1 className="text-4xl font-bold mb-4 text-center md:text-left">Création de site vitrine à Nantes</h1>
-          <p className="text-lg text-gray-300 mb-6 text-center md:text-left">Boostez votre visibilité avec un site vitrine moderne, responsive et optimisé pour Google. Idéal pour artisans, PME, indépendants et associations.</p>
+          <p className="text-lg text-gray-300 mb-6 text-center md:text-left">Boostez votre visibilité locale avec un site vitrine moderne, responsive et optimisé pour Google. Idéal pour artisans, PME, indépendants et entreprises de Nantes et Loire-Atlantique.</p>
           <a href="/contact" className="cta-btn inline-block">Demander un devis</a>
         </div>
-      </section>
+      </motion.section>
       {/* Avantages */}
-      <section className="max-w-4xl mx-auto py-10 px-6 grid grid-cols-1 md:grid-cols-2 gap-8">
+      <motion.section
+        id="advantages"
+        role="region"
+        aria-label="Avantages"
+        className="max-w-4xl mx-auto py-10 px-6 grid grid-cols-1 md:grid-cols-2 gap-8"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
+      >
         <div className="flex items-center gap-4 bg-[#23262B] rounded-xl p-6 shadow">
           <IconDesign />
           <div>
@@ -83,7 +100,7 @@ export default function SiteVitrine() {
             <p className="text-gray-300">Un expert à vos côtés avant, pendant et après la mise en ligne.</p>
           </div>
         </div>
-      </section>
+      </motion.section>
       {/* Processus */}
       <section className="max-w-4xl mx-auto py-10 px-6">
         <h2 className="text-2xl font-bold mb-8 text-center">Comment ça se passe ?</h2>

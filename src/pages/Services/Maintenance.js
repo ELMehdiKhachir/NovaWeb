@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import { motion } from 'framer-motion';
 
 const IconShield = () => (
   <svg width="36" height="36" fill="none" viewBox="0 0 24 24"><path d="M12 3l7 4v5c0 5.25-3.5 9.74-7 11-3.5-1.26-7-5.75-7-11V7l7-4z" fill="#2563eb"/><path d="M12 3v17c3.5-1.26 7-5.75 7-11V7l-7-4z" fill="#174ea6"/></svg>
@@ -16,25 +17,30 @@ const IconSpeed = () => (
 
 export default function Maintenance() {
   return (
-    <main className="bg-[#181B20] min-h-screen text-white font-sans">
+    <main role="main" className="bg-[#181B20] min-h-screen text-white font-sans">
       <Helmet>
-        <title>Maintenance de site web à Nantes | NovaWeb</title>
-        <meta name="description" content="Maintenance de site web à Nantes et Pays de la Loire. Sécurité, mises à jour, support technique, intervention rapide." />
-        <meta name="keywords" content="maintenance site web, sécurité, mises à jour, support technique, Nantes, NovaWeb" />
+        <title>Maintenance de site web à Nantes | NovaWeb Digital</title>
+        <meta name="description" content="Maintenance de site web à Nantes et Loire-Atlantique. Sécurité, mises à jour, support technique, intervention rapide pour PME et entreprises locales." />
+        <meta name="keywords" content="maintenance site web Nantes, sécurité site internet Loire-Atlantique, support PME, agence web Nantes, intervention rapide, entreprise" />
         {/* Open Graph */}
-        <meta property="og:title" content="Maintenance de site web à Nantes | NovaWeb" />
-        <meta property="og:description" content="Maintenance de site web à Nantes et Pays de la Loire. Sécurité, mises à jour, support technique, intervention rapide." />
+        <meta property="og:title" content="Maintenance de site web à Nantes | NovaWeb Digital" />
+        <meta property="og:description" content="Maintenance de site web à Nantes et Loire-Atlantique pour PME et entreprises. Sécurité, mises à jour, support local." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://novaweb.fr/services/maintenance" />
         <meta property="og:image" content="/logo-pack/novaweb-logo-original.png" />
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Maintenance de site web à Nantes | NovaWeb" />
-        <meta name="twitter:description" content="Maintenance de site web à Nantes et Pays de la Loire. Sécurité, mises à jour, support technique, intervention rapide." />
+        <meta name="twitter:title" content="Maintenance de site web à Nantes | NovaWeb Digital" />
+        <meta name="twitter:description" content="Agence web à Nantes spécialisée en maintenance de site web pour PME et entreprises en Loire-Atlantique." />
         <meta name="twitter:image" content="/logo-pack/novaweb-logo-original.png" />
       </Helmet>
       {/* Héros visuel */}
-      <section className="max-w-4xl mx-auto py-16 px-6 flex flex-col md:flex-row items-center gap-10">
+      <motion.section
+        id="hero"
+        role="region"
+        aria-label="Hero"
+        className="max-w-4xl mx-auto py-16 px-6 flex flex-col md:flex-row items-center gap-10"
+      >
         <div className="flex-1 flex justify-center">
           <svg width="220" height="180" viewBox="0 0 220 180" fill="none" xmlns="http://www.w3.org/2000/svg" className="drop-shadow-xl">
             <ellipse cx="110" cy="160" rx="90" ry="18" fill="#232B36"/>
@@ -47,12 +53,17 @@ export default function Maintenance() {
         </div>
         <div className="flex-1">
           <h1 className="text-4xl font-bold mb-4 text-center md:text-left">Maintenance de site web à Nantes</h1>
-          <p className="text-lg text-gray-300 mb-6 text-center md:text-left">Assurez la sécurité et la performance de votre site avec notre service de maintenance. Intervention rapide, support technique, mises à jour régulières.</p>
+          <p className="text-lg text-gray-300 mb-6 text-center md:text-left">Assurez la sécurité et la performance de votre site web à Nantes et Loire-Atlantique grâce à notre service de maintenance dédié aux PME et entreprises locales.</p>
           <a href="/contact" className="cta-btn inline-block">Demander un devis</a>
         </div>
-      </section>
+      </motion.section>
       {/* Avantages */}
-      <section className="max-w-4xl mx-auto py-10 px-6 grid grid-cols-1 md:grid-cols-2 gap-8">
+      <motion.section
+        id="advantages"
+        role="region"
+        aria-label="Avantages"
+        className="max-w-4xl mx-auto py-10 px-6 grid grid-cols-1 md:grid-cols-2 gap-8"
+      >
         <div className="flex items-center gap-4 bg-[#23262B] rounded-xl p-6 shadow">
           <IconShield />
           <div>
@@ -81,9 +92,13 @@ export default function Maintenance() {
             <p className="text-gray-300">Notre équipe technique intervient rapidement en cas de besoin.</p>
           </div>
         </div>
-      </section>
+      </motion.section>
       {/* Processus */}
-      <section className="max-w-4xl mx-auto py-10 px-6">
+      <section
+        role="region"
+        aria-label="Processus"
+        className="max-w-4xl mx-auto py-10 px-6"
+      >
         <h2 className="text-2xl font-bold mb-8 text-center">Notre méthode</h2>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
           <div className="bg-[#23262B] rounded-xl p-6 flex flex-col items-center shadow">
@@ -109,7 +124,11 @@ export default function Maintenance() {
         </div>
       </section>
       {/* Pourquoi choisir NovaWeb */}
-      <section className="max-w-3xl mx-auto py-10 px-6 text-center">
+      <section
+        role="region"
+        aria-label="Pourquoi nous choisir"
+        className="max-w-3xl mx-auto py-10 px-6 text-center"
+      >
         <h2 className="text-2xl font-bold mb-4">Pourquoi choisir NovaWeb ?</h2>
         <p className="text-lg text-gray-300 mb-4">Expertise technique, sécurité, réactivité et accompagnement : tout est pensé pour la tranquillité d'esprit de nos clients.</p>
         <ul className="flex flex-wrap justify-center gap-4 text-gray-400 text-sm">
@@ -120,7 +139,11 @@ export default function Maintenance() {
         </ul>
       </section>
       {/* FAQ */}
-      <section className="max-w-3xl mx-auto py-10 px-6">
+      <section
+        role="region"
+        aria-label="FAQ"
+        className="max-w-3xl mx-auto py-10 px-6"
+      >
         <h2 className="text-2xl font-bold mb-6 text-center">FAQ - Maintenance</h2>
         <div className="space-y-6">
           <div className="bg-[#23262B] rounded-xl p-5">
@@ -138,7 +161,11 @@ export default function Maintenance() {
         </div>
       </section>
       {/* Appel à l'action final */}
-      <section className="max-w-2xl mx-auto py-10 px-6 text-center">
+      <section
+        role="region"
+        aria-label="Appel à l'action"
+        className="max-w-2xl mx-auto py-10 px-6 text-center"
+      >
         <h2 className="text-2xl font-bold mb-4">Besoin d'une maintenance fiable ?</h2>
         <p className="text-lg text-gray-300 mb-6">Contactez-nous pour discuter de votre projet et obtenir un devis gratuit, sans engagement.</p>
         <a href="/contact" className="cta-btn inline-block">Discutons de votre projet</a>

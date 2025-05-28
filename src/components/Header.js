@@ -6,7 +6,7 @@ export default function Header() {
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
 
   return (
-    <header className="flex justify-between items-center px-8 py-6 max-w-6xl mx-auto w-full">
+    <header role="banner" className="flex justify-between items-center px-8 py-6 max-w-6xl mx-auto w-full">
       <div className="flex flex-row items-center gap-3 mr-6">
         <span className="w-12 h-12 flex items-center justify-center">
           <img src="/logo-pack/novaweb-logo-original.png" alt="Logo NovaWeb Digital" className="w-12 h-12 object-contain" />
@@ -17,7 +17,7 @@ export default function Header() {
         </div>
       </div>
       {/* Desktop menu */}
-      <nav aria-label="Menu principal" className="hidden md:block">
+      <nav role="navigation" aria-label="Menu principal" className="hidden md:block">
         <ul className="flex gap-8 text-lg font-semibold tracking-wide font-sans">
           <li><Link to="/" className="header-link">Accueil</Link></li>
           <li className="relative group">
