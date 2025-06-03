@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://novaweb-digital.fr/sitemap.xml 
+Sitemap: https://www.novaweb-digital.fr/sitemap.xml 
