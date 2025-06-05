@@ -34,6 +34,7 @@ export default function Header() {
           </li>
           <li><Link to="/novaMethode" className="header-link">NovaMéthode</Link></li>
           <li><Link to="/about" className="header-link">À propos</Link></li>
+          <li><Link to="/blog" className="header-link">Blog</Link></li>
           <li><Link to="/contact" className="header-link">Contact</Link></li>
         </ul>
       </nav>
@@ -68,6 +69,7 @@ export default function Header() {
             </div>
             <Link to="/novaMethode" className="header-link mb-2" onClick={() => setMobileMenuOpen(false)}>NovaMéthode</Link>
             <Link to="/about" className="header-link mb-2" onClick={() => setMobileMenuOpen(false)}>À propos</Link>
+            <Link to="/blog" className="header-link mb-2" onClick={() => setMobileMenuOpen(false)}>Blog</Link>
             <Link to="/contact" className="header-link mb-2" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
           </nav>
         </div>

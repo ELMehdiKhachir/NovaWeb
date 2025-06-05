@@ -1,0 +1,135 @@
+[
+  {
+    "slug": "site-web-performant",
+    "title": "Les clés d'un site web performant : guide complet",
+    "cover": "/images/blog/cleDunSite.png",
+    "excerpt": "Découvrez les meilleures pratiques pour créer un site web rapide, fluide et optimisé pour vos visiteurs et pour Google.",
+    "date": "2025-06-01",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Dans un monde numérique où chaque seconde compte, la performance de votre site web est cruciale. Un site lent fait fuir les visiteurs et nuit à votre référencement. Il est donc essentiel d’optimiser chaque aspect technique et visuel pour offrir une expérience utilisateur fluide."
+      },
+      {
+        "type": "paragraph",
+        "text": "Les éléments fondamentaux d’un site performant incluent un temps de chargement rapide, un design responsive, une navigation intuitive et une optimisation des ressources (images, scripts, CSS)."
+      },
+      {
+        "type": "paragraph",
+        "text": "Utilisez des outils comme Google PageSpeed Insights pour identifier les points d'amélioration. Réduisez la taille des images, activez la compression GZIP, et privilégiez l’hébergement sur des serveurs performants. Intégrez un système de cache et veillez à ce que le site soit compatible avec mobile pour améliorer l'expérience utilisateur."
+      },
+      {
+        "type": "paragraph",
+        "text": "Enfin, surveillez régulièrement les performances à l’aide d’outils d’analyse pour rester à jour. Un site rapide, bien structuré et régulièrement mis à jour renforce votre image professionnelle et votre visibilité sur les moteurs de recherche."
+      }
+    ]
+  },
+  {
+    "slug": "ameliorer-referencement-seo",
+    "title": "5 conseils pour améliorer votre référencement SEO",
+    "cover": "/images/blog/conseils.png",
+    "excerpt": "Boostez la visibilité de votre site web grâce à des techniques SEO concrètes, simples et efficaces adaptées à votre stratégie digitale.",
+    "date": "2025-05-20",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Le référencement naturel (SEO) est la clé pour générer du trafic qualifié vers votre site web. Il permet d’apparaître dans les premiers résultats des moteurs de recherche sans publicité payante. Voici 5 conseils pratiques pour améliorer votre SEO :"
+      },
+      {
+        "type": "paragraph",
+        "text": "1. Utilisez des mots-clés pertinents : identifiez les termes que vos clients potentiels recherchent et intégrez-les naturellement dans vos contenus."
+      },
+      {
+        "type": "paragraph",
+        "text": "2. Structurez votre contenu : utilisez des balises H1, H2, H3 pour hiérarchiser vos titres et sous-titres."
+      },
+      {
+        "type": "paragraph",
+        "text": "3. Optimisez vos images : nommez-les de manière descriptive, compressez-les et renseignez les balises alt."
+      },
+      {
+        "type": "paragraph",
+        "text": "4. Créez du contenu de qualité régulièrement : un blog actif augmente les chances d’être indexé par Google."
+      },
+      {
+        "type": "paragraph",
+        "text": "5. Obtenez des backlinks : des liens provenant d'autres sites crédibilisent votre contenu et améliorent votre autorité."
+      }
+    ]
+  },
+  {
+    "slug": "importance-mobile-first",
+    "title": "Pourquoi adopter une stratégie mobile-first ?",
+    "cover": "/images/blog/mobile.png",
+    "excerpt": "Plus de 60% des internautes naviguent sur mobile : découvrez pourquoi et comment adapter votre site à cette réalité incontournable.",
+    "date": "2025-05-15",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Le mobile-first consiste à concevoir d'abord pour les écrans mobiles, puis à adapter pour les écrans plus larges. C’est devenu essentiel, car la majorité des utilisateurs naviguent via leur smartphone."
+      },
+      {
+        "type": "paragraph",
+        "text": "Un site mobile-first garantit un temps de chargement réduit, une lisibilité optimale, et des interactions pensées pour le tactile. Cela améliore l’expérience utilisateur et augmente les conversions."
+      },
+      {
+        "type": "paragraph",
+        "text": "Google valorise les sites responsives dans ses résultats de recherche. En anticipant les besoins des utilisateurs mobiles, vous améliorez votre positionnement SEO et renforcez votre crédibilité en ligne."
+      },
+      {
+        "type": "paragraph",
+        "text": "Adopter une stratégie mobile-first, c’est investir dans un site moderne, accessible et performant, en phase avec les usages actuels."
+      }
+    ]
+  },
+  {
+    "slug": "refonte-site-internet",
+    "title": "Quand et pourquoi envisager la refonte de votre site web ?",
+    "cover": "/images/blog/refonte.png",
+    "excerpt": "Votre site semble dépassé ? Voici les signes qu’il est temps de le refondre pour rester compétitif et performant.",
+    "date": "2025-05-10",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Un site internet n’est pas éternel. Avec le temps, les technologies évoluent, les standards du design changent, et les attentes des utilisateurs augmentent. Une refonte permet de rester compétitif."
+      },
+      {
+        "type": "paragraph",
+        "text": "Les signes d’alerte sont nombreux : design obsolète, navigation confuse, lenteur, incompatibilité mobile, ou difficulté à se positionner sur Google."
+      },
+      {
+        "type": "paragraph",
+        "text": "La refonte vous permet d’améliorer l’image de votre entreprise, d’adapter votre site à votre nouvelle stratégie commerciale, et d’intégrer les dernières technologies pour booster les performances."
+      },
+      {
+        "type": "paragraph",
+        "text": "C’est aussi l’occasion de repenser l’ergonomie, le parcours utilisateur, et d’optimiser le SEO dès la structure du site."
+      }
+    ]
+  },
+  {
+    "slug": "role-agence-web",
+    "title": "Quel est le rôle d’une agence web dans votre projet digital ?",
+    "cover": "/images/blog/role.png",
+    "excerpt": "Découvrez comment une agence web peut vous accompagner dans la création et la réussite de votre projet digital.",
+    "date": "2025-05-05",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Une agence web est un partenaire essentiel pour toute entreprise souhaitant se lancer ou se développer sur internet. Elle vous accompagne de l’idée à la mise en ligne."
+      },
+      {
+        "type": "paragraph",
+        "text": "Elle apporte une expertise complète : stratégie digitale, design UX/UI, développement sur mesure, hébergement, et optimisation SEO."
+      },
+      {
+        "type": "paragraph",
+        "text": "Travailler avec une agence, c’est bénéficier d’un regard extérieur professionnel et d’un accompagnement sur mesure. Vous gagnez en temps, en efficacité, et vous assurez une présence en ligne cohérente et performante."
+      },
+      {
+        "type": "paragraph",
+        "text": "Que ce soit pour la création d’un site vitrine, d’un e-commerce ou d’une refonte, une agence web transforme vos idées en résultats concrets et mesurables."
+      }
+    ]
+  }
+]

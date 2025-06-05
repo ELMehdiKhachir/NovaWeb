@@ -41,6 +41,7 @@ export default function Footer() {
                 <li><Link to="/services" className="footer-link">Services</Link></li>
                 <li><Link to="/novaMethode" className="footer-link">NovaMéthode</Link></li>
                 <li><Link to="/about" className="footer-link">À propos</Link></li>
+                <li><Link to="/blog" className="footer-link">Blog</Link></li>
                 <li><Link to="/contact" className="footer-link">Contact</Link></li>
               </ul>
             </nav>

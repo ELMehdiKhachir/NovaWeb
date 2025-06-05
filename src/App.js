@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Services from "./pages/Services/Services";
 import NovaMethode from "./pages/NovaMethode/NovaMethode";
@@ -16,6 +16,8 @@ import Maintenance from './pages/Services/Maintenance';
 import Refonte from './pages/Services/Refonte';
 import ApplicationMobile from './pages/Services/ApplicationMobile';
 import Merci from './pages/Merci';
+import BlogList from "./pages/Blog/BlogList";
+import BlogArticle from "./pages/Blog/BlogArticle";
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -38,6 +40,8 @@ function App() {
           <Route path="/politique-confidentialite" element={<PolitiqueConfidentialite />} />
           <Route path="/cgv" element={<CGV />} />
           <Route path="/merci" element={<Merci />} />
+          <Route path="/blog" element={<BlogList />} />
+          <Route path="/blog/:slug" element={<BlogArticle />} />
         </Routes>
         <Footer />
       </div>
