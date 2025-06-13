@@ -1,5 +1,31 @@
 [
   {
+    "slug": "site-web-professionnel-2025",
+    "title": "Pourquoi votre entreprise a besoin d’un site web professionnel en 2025 ?",
+    "cover": "/images/blog/sitepro2025.png",
+    "excerpt": "Découvrez pourquoi un site web professionnel est indispensable pour renforcer la crédibilité, attirer de nouveaux clients et développer votre activité en ligne.",
+    "date": "2025-06-14",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Aujourd’hui, avoir un site web professionnel n’est plus une option : c’est un levier de croissance incontournable. Dans un monde où 81% des consommateurs recherchent une entreprise en ligne avant d’acheter, votre site devient votre premier ambassadeur."
+      },
+      {
+        "type": "paragraph",
+        "text": "Un site web bien conçu vous permet de renforcer la crédibilité de votre marque, de générer des prospects qualifiés et d’atteindre de nouveaux marchés. Il doit être rapide, sécurisé, responsive et optimisé SEO pour capter l’attention des moteurs de recherche."
+      },
+      {
+        "type": "paragraph",
+        "text": "Enfin, un site web professionnel bien construit facilite également l’intégration d’outils marketing : formulaires, landing pages, campagnes SEA / SEO, tracking Google Analytics, marketing automation, etc."
+      },
+      {
+        "type": "paragraph",
+        "text": "Chez NovaWeb Digital, nous accompagnons nos clients dans la création de sites performants, orientés résultats. Contactez-nous pour faire passer votre présence en ligne au niveau supérieur."
+      }
+    ]
+  },
+
+  {
     "slug": "site-web-performant",
     "title": "Les clés d'un site web performant : guide complet",
     "cover": "/images/blog/cleDunSite.png",
