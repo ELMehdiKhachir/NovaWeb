@@ -1,5 +1,68 @@
 [
   {
+    "slug": "site-vitrine-efficace",
+    "title": "Créer un site vitrine efficace : les bonnes pratiques pour marquer les esprits",
+    "cover": "/images/blog/site-vitrine-efficace.png",
+    "excerpt": "Un site vitrine bien conçu est un atout stratégique pour toute entreprise souhaitant affirmer sa présence en ligne. Voici les clés pour créer un site impactant et professionnel.",
+    "date": "2025-07-09",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Le site vitrine est souvent la première impression que les visiteurs auront de votre entreprise. Il doit refléter votre image, transmettre votre message clairement et inciter à l’action. Voici comment optimiser sa conception."
+      },
+      {
+        "type": "heading",
+        "text": "1. Définir des objectifs clairs"
+      },
+      {
+        "type": "paragraph",
+        "text": "Avant toute création, identifiez le but de votre site vitrine : attirer des prospects ? Présenter vos services ? Renforcer la crédibilité de votre marque ? Cela orientera toute la structure du site."
+      },
+      {
+        "type": "heading",
+        "text": "2. Miser sur un design moderne et responsive"
+      },
+      {
+        "type": "paragraph",
+        "text": "Un design professionnel, cohérent avec votre identité visuelle, retient l’attention. Le site doit être lisible et agréable sur tous les supports : desktop, mobile et tablette."
+      },
+      {
+        "type": "heading",
+        "text": "3. Structurer le contenu efficacement"
+      },
+      {
+        "type": "paragraph",
+        "text": "Utilisez une hiérarchie claire : titres, sous-titres, paragraphes courts. Ajoutez des appels à l’action visibles comme “Demander un devis” ou “Nous contacter” pour guider l’utilisateur."
+      },
+      {
+        "type": "heading",
+        "text": "4. Optimiser le SEO dès le départ"
+      },
+      {
+        "type": "paragraph",
+        "text": "Chaque page doit avoir une balise title, une meta description bien rédigée, et un contenu riche en mots-clés pertinents. Intégrez des images optimisées avec des balises alt pour améliorer votre visibilité sur Google."
+      },
+      {
+        "type": "heading",
+        "text": "5. Mettre en avant vos réalisations et témoignages"
+      },
+      {
+        "type": "paragraph",
+        "text": "Rien ne vaut la preuve sociale. Présentez des projets réussis et intégrez des avis clients pour rassurer vos visiteurs et augmenter votre taux de conversion."
+      },
+      {
+        "type": "image",
+        "src": "/images/blog/article-vitrine-detail.png",
+        "alt": "Mockup d'un site vitrine moderne sur plusieurs écrans"
+      },
+      {
+        "type": "paragraph",
+        "text": "Chez NovaWeb Digital, nous accompagnons les entreprises dans la création de sites vitrines performants, sur-mesure, et 100 % optimisés pour le SEO. Contactez-nous pour transformer vos idées en un site professionnel."
+      }
+    ]
+  },
+  
+  {
     "slug": "site-web-professionnel-2025",
     "title": "Pourquoi votre entreprise a besoin d’un site web professionnel en 2025 ?",
     "cover": "/images/blog/sitepro2025.png",
